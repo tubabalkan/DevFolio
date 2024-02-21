@@ -39,7 +39,7 @@ namespace DevFolio.Controllers
         }
         public PartialViewResult PartialAbout()
         {
-            var values = db.TblAbout.ToList();
+            var values = db.TblAbout.ToList(); 
             return PartialView(values);
         }
         public PartialViewResult PartialTestimonial()
