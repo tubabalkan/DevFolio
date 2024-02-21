@@ -83,6 +83,10 @@ namespace DevFolio.Controllers
         }
         public PartialViewResult Partialİstatistik()
         {
+            ViewBag.categoryCount = db.TblCategory.Count();
+            ViewBag.skillAvgValue = db.TblSkill.Average(x => x.SkillValue);
+            ViewBag.ServiceCount = db.TblServices.Count();
+            ViewBag.projectCount = db.TblProject.Count();
             return PartialView();
         }
         public PartialViewResult PartialScript()
