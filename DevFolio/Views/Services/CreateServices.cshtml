@@ -1,0 +1,16 @@
+﻿@model DevFolio.Models.TblServices
+@{
+    ViewBag.Title = "CreateServices";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Hizmet Ekleme Sayfası</h2>
+<form method="post">
+    <label>Hizmet Adı</label>
+    @Html.TextBoxFor(x => x.ServicesTitle, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Hizmeti Kaydet</button>
+</form>

@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+@Html.Action("PartialHead","Default")
+<body id="page-top">
+    <!--/ Nav Star /-->
+    @Html.Action("PartialNavbar", "Default")
+    <!--/ Nav End /-->
+    <!--/ Intro Skew Star /-->
+    @Html.Action("PartialFeature", "Default")
+    <!--/ Intro Skew End /-->
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                @Html.Action("PartialProfile", "Default")
+                                @Html.Action("PartialSkill", "Default")
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Action("PartialAbout", "Default")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Section Services Star /-->
+    @Html.Action("PartialServices", "Default")
+    <!--/ Section Services End /-->
+    <!-- İstatistikler başlangıç-->
+        @Html.Action("Partialİstatistik", "Default")
+        <!--İstatistikler bitiş-->
+        <!--/ Section Portfolio Star /-->
+        @Html.Action("PartialPortfolio", "Default")
+        <!--/ Section Portfolio End /-->
+        <!--/ Section Testimonials Star /-->
+        <hr class="m-0" />
+        <section class="resume-section" id="testimonial">
+            @Html.Action("PartialTestimonial", "Default")
+        </section>
+        <!--/ Section Contact-Footer Star /-->
+        <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="contact-mf">
+                            <div id="contact" class="box-shadow-full">
+                                <div class="row">
+                                    @Html.Action("PartialMessage", "Default")
+                                    <div class="col-md-6">
+                                        @Html.Action("PartialAdress", "Default")
+                                        @Html.Action("PartialSocialMedia", "Default")
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @Html.Action("PartialFooter", "Default")
+        </section>
+        <!--/ Section Contact-footer End /-->
+        @Html.Action("PartialScript", "Default")
+</body>
+</html>

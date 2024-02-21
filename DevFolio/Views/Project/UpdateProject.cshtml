@@ -1,0 +1,19 @@
+﻿@model DevFolio.Models.TblProject
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Proje Güncelleme Sayfası</h2>
+<form method="post">
+    <label>Proje Id</label>
+    <input type="text" class="form-control" name="ProjectId" value="@Model.ProjectId" />
+    <br />
+    <label>Proje Başlığı</label>
+    <input type="text" class="form-control" name="Title" value="@Model.Title" />
+    <br />
+    <label>Category</label>
+    <input type="text" class="form-control" name="ProjectCategory" value="@Model.ProjectCategory" />
+    <br />
+    <button class="btn btn-warning">Projeyi Güncelle</button>
+</form>

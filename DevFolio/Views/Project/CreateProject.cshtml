@@ -1,0 +1,26 @@
+﻿@model DevFolio.Models.TblProject 
+@{
+    ViewBag.Title = "CreateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Proje Oluşturma Sayfası</h2>
+<form class="post">
+    <label>Proje Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.CoverImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Proje Kategorisi</label>
+    @Html.TextBoxFor(x => x.ProjectCategory, new { @class = "form-control" })
+    <br />
+    <label>Proje Tarihi</label>
+    @Html.TextBoxFor(x => x.CreatedDate, new { @class = "form-control" })
+    <br />
+    <!-- <label>Proje Açıklaması</label>
+    <textarea rows="5" class="form-control"></textarea>
+        <br />-->
+    <button class="btn btn-info">Projeyi Kaydet</button>
+</form>
+

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "CreateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Mesaj Oluşturma Sayfası</h2>
+<form class="post">
+    <label>İsim Soyisim</label>
+    <input type="text" class="form-control" name="NameSurname" />
+    <br />
+    <label>Mail Adresi</label>
+    <input type="text" class="form-control" name="Email" />
+    <br />
+    <label>Konu Başlığı</label>
+    <input type="text" class="form-control" name="Subject" />
+    <br />
+    <label>Mesaj</label>
+<textarea rows="5" class="form-control"></textarea>
+    <br />
+    <button class="btn btn-info">Mesajı Kaydet</button>
+</form>
