@@ -18,11 +18,21 @@ namespace DevFolio.Controllers
         [HttpGet]
         public ActionResult CreateProject() 
         {
+            List<SelectListItem> category = (from x in db.TblCategory.ToList()
+                                             select new SelectListItem
+                                             {
+                                                 Text = x.CategoryName,
+                                                 Value = x.CategoryId.ToString()
+                                             }).ToList();
+            ViewBag.Category = category;
             return View();
         }
         [HttpPost]
         public ActionResult CreateProject(TblProject p)
         {
+            var category = db.TblCategory.Where(m => m.CategoryId == p.TblCategory.CategoryId).FirstOrDefault();
+            p.TblCategory = category;
+            p.CreatedDate = DateTime.Now;
             db.TblProject.Add(p);
             db.SaveChanges();
             return RedirectToAction("Index");

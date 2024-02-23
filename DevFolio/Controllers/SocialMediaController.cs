@@ -45,7 +45,9 @@ namespace DevFolio.Controllers
         {
             var value = db.TblSocialMedia.Find(p.SocialMediID);
             value.PlatformName = p.PlatformName;
+            value.RedirectUrl = p.RedirectUrl;
             value.status = p.status;
+            value.IconUrl = p.IconUrl;
             db.SaveChanges();
             return RedirectToAction("SocialMediaList");
         }
