@@ -224,6 +224,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Icons\python.png" />
     <Content Include="login-form-20\css\bootstrap.min.css" />
     <Content Include="login-form-20\css\bootstrap\mixins\_border-radius.css" />
     <Content Include="login-form-20\css\bootstrap\mixins\_reset-text.css" />
