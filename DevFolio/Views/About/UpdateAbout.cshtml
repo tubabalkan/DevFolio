@@ -6,8 +6,8 @@
 
 <h2>Hakkımda Güncelleme Sayfası</h2>
 <form method="post">
-    <label>Hakkımda Id</label>
-    <input type="text" class="form-control" name="AboutId" value="@Model.AboutId" />
+    @*<label>Hakkımda Id</label>*@
+    <input type="hidden" class="form-control" name="AboutId" value="@Model.AboutId" />
     <br />
     <label>Açıklama</label>
     <input type="text" class="form-control" name="Description" value="@Model.Description" />

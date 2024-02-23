@@ -7,8 +7,8 @@
 <h2>Mesaj Gümcelleme Sayfası</h2>
 
 <form method="post">
-    <label>Mesaj Id</label>
-    <input type="text" class="form-control" name="ContactID" value="@Model.ContactID" />
+    @*<label>Mesaj Id</label>*@
+    <input type="hidden" class="form-control" name="ContactID" value="@Model.ContactID" />
     <br />
     <label>İsim Soyisim</label>
     <input type="text" class="form-control" name="NameSurname" value="@Model.NameSurname" />

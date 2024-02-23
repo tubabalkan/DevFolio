@@ -6,8 +6,8 @@
 
 <h2>Proje Güncelleme Sayfası</h2>
 <form method="post">
-    <label>Proje Id</label>
-    <input type="text" class="form-control" name="ProjectId" value="@Model.ProjectId" />
+    @*<label>Proje Id</label>*@
+    <input type="hidden" class="form-control" name="ProjectId" value="@Model.ProjectId" />
     <br />
     <label>Proje Başlığı</label>
     <input type="text" class="form-control" name="Title" value="@Model.Title" />

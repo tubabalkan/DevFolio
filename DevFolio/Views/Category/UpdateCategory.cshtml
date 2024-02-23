@@ -7,8 +7,8 @@
 <h2>Kategori Güncelleme Sayfası</h2>
 
 <form method="post">
-    <label>Kategori Id</label>
-    <input type="text" class="form-control" name="CategoryId" value="@Model.CategoryId" />
+    @*<label>Kategori Id</label>*@
+    <input type="hidden" class="form-control" name="CategoryId" value="@Model.CategoryId" />
     <br/>
     <label>Kategori Adı</label>
     <input type="text" class="form-control" name="CategoryName" value="@Model.CategoryName" />

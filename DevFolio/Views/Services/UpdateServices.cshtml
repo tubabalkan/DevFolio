@@ -7,8 +7,8 @@
 <h2>Hizmet Güncelleme Sayfası</h2>
 
 <form method="post">
-    <label>Hizmet Id</label>
-    <input type="text" class="form-control" name="ServicesId" value="@Model.ServicesId" />
+    @*<label>Hizmet Id</label>*@
+    <input type="hidden" class="form-control" name="ServicesId" value="@Model.ServicesId" />
     <br />
     <label>Hizmet Adı</label>
     <input type="text" class="form-control" name="ServicesTitle" value="@Model.ServicesTitle" />

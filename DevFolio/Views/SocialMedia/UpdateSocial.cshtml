@@ -6,7 +6,9 @@
 
 <h2>Sosyal Medya Güncelleme Sayfası</h2>
 <form method="post">
-    
+    @*<label>Sosyal Medya Id</label>*@
+    <input type="hidden" class="form-control" name="SocialMediID" value="@Model.SocialMediID" />
+    <br />
     <label>Sosyal Medya Adı</label>
     <input type="text" class="form-control" name="PlatformName" value="@Model.PlatformName" />
     <br />
