@@ -121,6 +121,7 @@
           <Property Name="TestMonialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NameSurname" Type="varchar" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="200" />
+          <Property Name="yorum" Type="varchar" MaxLength="200" />
           <Property Name="ImageUrl" Type="varchar" MaxLength="250" />
           <Property Name="Status" Type="bit" />
         </EntityType>
@@ -272,6 +273,7 @@
           <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="ImageUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Status" Type="Boolean" />
+          <Property Name="yorum" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
           <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
@@ -435,6 +437,7 @@
           <EntitySetMapping Name="TblTestimonial">
             <EntityTypeMapping TypeName="DbDevFolioModel.TblTestimonial">
               <MappingFragment StoreEntitySet="TblTestimonial">
+                <ScalarProperty Name="yorum" ColumnName="yorum" />
                 <ScalarProperty Name="TestMonialID" ColumnName="TestMonialID" />
                 <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
                 <ScalarProperty Name="Description" ColumnName="Description" />

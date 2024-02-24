@@ -13,8 +13,11 @@
     <label>Referans Görseli</label>
     @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
     <br />
-    <label>Referans Yorumu</label>
+    <label>Referans Açıklaması</label>
     @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Referans Yorumu</label>
+    @Html.TextBoxFor(x => x.yorum, new { @class = "form-control" })
     <br />
     <button class="btn btn-info">Referans Kaydet</button>
 </form>

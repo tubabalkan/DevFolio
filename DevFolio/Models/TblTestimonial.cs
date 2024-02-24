@@ -19,5 +19,6 @@ namespace DevFolio.Models
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public Nullable<bool> Status { get; set; }
+        public string yorum { get; set; }
     }
 }

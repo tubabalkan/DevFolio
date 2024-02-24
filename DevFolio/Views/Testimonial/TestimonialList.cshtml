@@ -10,19 +10,21 @@
     <tr>
         <th>#</th>
         <th>Referans Adı</th>
-        <th>Referans Yorumu</th>
+        <th>Referans Açıklaması</th>
+        <th>Referansın Yorumu</th>
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
     @foreach (var item in Model)
             {
-                <tr>
-                    <td>@item.TestMonialID</td>
-                    <td>@item.NameSurname</td>
-                    <td>@item.Description</td>
-                    <td><a href="/Testimonial/DeleteTestimonial/@item.TestMonialID" class="btn btn-danger">Sil</a></td>
-                    <td><a href="/Testimonial/UpdateTestimonial/@item.TestMonialID" class="btn btn-success">Güncelle</a></td>
-                </tr>
+<tr>
+    <td>@item.TestMonialID</td>
+    <td>@item.NameSurname</td>
+    <td>@item.Description</td>
+    <td>@item.yorum</td>
+    <td><a href="/Testimonial/DeleteTestimonial/@item.TestMonialID" class="btn btn-danger">Sil</a></td>
+    <td><a href="/Testimonial/UpdateTestimonial/@item.TestMonialID" class="btn btn-success">Güncelle</a></td>
+</tr>
             }
 </table>
 <a href="/Testimonial/CreateTestimonial/" class="btn btn-info">Yeni Referans Yorumu</a>
