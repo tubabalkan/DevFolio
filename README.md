@@ -16,12 +16,12 @@
 ![3](https://github.com/tubabalkan/DevFolio/assets/100600148/262b43f8-3270-4f41-8ac0-2f7631f57a69)
 ![4](https://github.com/tubabalkan/DevFolio/assets/100600148/e2abad4c-2968-42aa-b299-de02931e9e83)
 ![5](https://github.com/tubabalkan/DevFolio/assets/100600148/8c94f4a6-04cd-4a6f-bfca-08397a5e491c)
-![6](https://github.com/tubabalkan/DevFolio/assets/100600148/956109da-2cf7-4011-bd16-b6af58bca27e)
+![referanstekrar](https://github.com/tubabalkan/DevFolio/assets/100600148/ba87daf2-ac4e-4ab9-b119-79c514992b09)
 ![7](https://github.com/tubabalkan/DevFolio/assets/100600148/edda997f-42bd-430c-9e94-0d29e4198320)
 #AdminGiriş
 ![admin1](https://github.com/tubabalkan/DevFolio/assets/100600148/4add8b1f-97aa-43dc-b06b-3ba00e85a85f)</br>
 #HakkımdaSayfası
-![admin2](https://github.com/tubabalkan/DevFolio/assets/100600148/e26435cd-75fc-47fa-a837-f386cb1fd774)</br>
+![hakkımdatekrar](https://github.com/tubabalkan/DevFolio/assets/100600148/2b45ee4c-3e62-437f-a43b-b9c9924a108c)</br>
 #ProjelerSayfası
 ![admin4](https://github.com/tubabalkan/DevFolio/assets/100600148/43a7cfe4-4783-435a-9a50-32be530bfee6)</br>
 #iletişimSayfası
