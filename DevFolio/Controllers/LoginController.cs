@@ -7,6 +7,7 @@ using DevFolio.Models;
 using System.Web.Security;
 namespace DevFolio.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         DbDevFolioEntities db = new DbDevFolioEntities();
@@ -35,6 +36,12 @@ namespace DevFolio.Controllers
 
             }
             
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
