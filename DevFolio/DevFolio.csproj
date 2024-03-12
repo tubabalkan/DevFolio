@@ -136,6 +136,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\FeatureController.cs" />
+    <Compile Include="Controllers\GenericRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
@@ -363,7 +364,7 @@
     <Content Include="login-form-20\scss\bootstrap\_utilities.scss" />
     <Content Include="login-form-20\scss\bootstrap\_variables.scss" />
     <Content Include="login-form-20\scss\style.scss" />
-    <Content Include="Cv\tuba balkanCV1.pdf" />
+    <Content Include="Cv\TubaBalkan_cv.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
